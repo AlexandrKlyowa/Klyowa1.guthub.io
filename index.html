@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Klyowa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sidenav.css">
+  <script src="js/sidenav.js"></script>
+  <script src="js/randomjoke.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <script>
+    $("document").ready(function () {
+      getRandomJoke();
+    }); 
+  </script>
+  <header>
+    <div id="header-container">
+      <button id="menu" onclick="openOrCloseNav()">
+        <img src="images/ic_menu_black_36px.svg" alt="Menu">
+      </button>
+      <h1>
+        <a href="index.html">Klyowa website</a> <p><font size="5" color="#0000CD" face="algerian"</font>
+      </h1>
+    </div>
+  </header>
+
+  <nav id="sidenav-menu">
+    <a href="hobbies.html">Увлечения</a>
+    <a href="gadget.html">Любимый гаджет</a>
+  </nav>
+
+  <div id="main-container">
+    <main id="main">
+      <!--specific page content goes here-->
+      <article>
+        <h1>Увлечения</h1>
+        <p>У меня есть несколько увлечений:</p>
+        <ul>
+          <li>Первое и самое увлекательное это чтение:<br>
+          <img src="images/hobbies2.jpeg" style="width: 80%" alt="Coding"></li>
+          <li>Второе увлечение которое даёт незабываемые эмоции это футбол:<br>
+          <img src="images/hobbies3.jpg" style="width: 80%" alt="Dancing"></li>
+          <li>Ну и конечно же как без фильмов и сериалов<br>
+          Я мог бы вставить фотку одного из них но их очень много</li>
+          <!--<li>Последнее по списку, но не по важности: чтение книг<br>
+          <img src="images/hobbies3.jpeg" style="width: 80%" alt="Reading"></li>-->
+        </ul>
+      </article>
+      <!--specific page content goes here-->
+    </main>
+
+    <aside id="random-joke">
+        <h1>Просто картинки:</h1>
+        <img id="random-joke-place" src="replace" alt="joke" style="width: 80%;">
+      </aside>
+  </div>
+
+  <footer>
+    <p align="center">Сделал Клёва Александр КІ-1805</p>
+  </footer>
+</body>
+
+</html>
